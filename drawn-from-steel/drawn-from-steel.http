@@ -1,0 +1,7 @@
+@drawn_from_steel_HostAddress = http://localhost:5255
+
+
+GET {{drawn_from_steel_HostAddress}}/api/Heroes/1
+Accept: application/json
+
+###
