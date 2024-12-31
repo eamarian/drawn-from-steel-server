@@ -1,7 +1,32 @@
 @drawn_from_steel_HostAddress = http://localhost:5255
 
+POST {{drawn_from_steel_HostAddress}}/api/User
+Content-Type: application/json
+Accept: application/json
 
-GET {{drawn_from_steel_HostAddress}}/api/Heroes/1
+{
+    "name": "Evan Marian",
+    "email": "eamarian@gmail.com"
+}
+
+###
+
+GET {{drawn_from_steel_HostAddress}}/api/User/2
+Accept: application/json
+
+###
+
+GET {{drawn_from_steel_HostAddress}}/api/User?email=eamarian@gmail.com
+Accept: application/json
+
+###
+
+GET {{drawn_from_steel_HostAddress}}/api/User/google/123
+Accept: application/json
+
+###
+
+GET {{drawn_from_steel_HostAddress}}/api/Session/123
 Accept: application/json
 
 ###

@@ -1,5 +1,5 @@
-using Microsoft.EntityFrameworkCore;
 using DrawnFromSteel.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace DrawnFromSteel
 {
@@ -21,7 +21,7 @@ namespace DrawnFromSteel
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
 
-            var app = builder.Build();
+            WebApplication app = builder.Build();
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
